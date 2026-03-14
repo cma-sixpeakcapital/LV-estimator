@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lv-estimator
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn construction_estimator.web:app --bind 0.0.0.0:$PORT
+    plan: free
