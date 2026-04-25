@@ -15,6 +15,13 @@
       "cwd": "work_portal/backend"
     },
     {
+      "name": "lv-exec-api",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["wsgi.py"],
+      "port": 5003,
+      "cwd": "lv_exec_portal/backend"
+    },
+    {
       "name": "work-portal-frontend",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
